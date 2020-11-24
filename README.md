@@ -5,7 +5,7 @@ By: Anthony Chen
 
 I was inspired when browsing reddit, where I found a post in a gaming subreddit urging fans to go to a specific website to rate their game five stars. The clickbait website was obviously just trying to make money by appealing to die-hard fans.
 
-So I asked myself, why can't I do the same thing, but instead of a website I just use a smart contract? Have people pay in eth for the privilege of rating their beloved game and pocket all their money.
+So I asked myself, why can't I do the same thing, but instead of a website I just use a smart contract? Just have people pay in crypto for the privilege of rating their beloved game and pocket all their money.
 
 ## How it's going to work
 1. First, the user submits their review and rating with a small payment to the smart contract
