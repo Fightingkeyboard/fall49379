@@ -1,13 +1,13 @@
-#Smart Contract Proposal
+# Smart Contract Proposal
 By: Anthony Chen
 
-#Idea
+# Idea
 
 I was inspired when browsing reddit, where I found a post in a gaming subreddit urging fans to go to a specific website to rate their game five stars. The clickbait website was obviously just trying to make money by appealing to die-hard fans.
 
 So I asked myself, why can't I do the same thing, but instead of a website I just use a smart contract? Have people pay in eth for the privilege of rating their beloved game and pocket all their money.
 
-#How it's going to work
+# How it's going to work
 1. First, the user submits their """""""review""""""" with a small payment to the smart contract
 2. Then, the smart contract (me) pocket the money (if I'm doing this for real)'
 3. The review and rating is stored and average rating for the game computed.
