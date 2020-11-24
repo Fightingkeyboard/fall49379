@@ -12,6 +12,6 @@ So I asked myself, why can't I do the same thing, but instead of a website I jus
 2. Then, the smart contract (me) pocket the money (if I'm doing this for real)'
 3. The review and rating is stored and average rating for the game computed.
 4. Next, If the user rates the game highly, the user get a message telling them that their game is the highest rated and is obviously a person of fine taste. If the user rate it poorly, the user gets a message telling them that they're courageous for standing up to the astroturfing/marketing campaign of the absolutely terrible game.
-    4b.they rate their game highly but there is a game with a higher rating, return a message that while their game was good, there is a higher rated game, and provide one of the higher rated game's reviews
+    -they rate their game highly but there is a game with a higher rating, return a message that while their game was good, there is a higher rated game, and provide one of the higher rated game's reviews
 5. Attempt to get stir up a war between fans of different games or get an angry mob to review bomb a bad game to get more users.
 6. Loob back to step 1. Profit.
