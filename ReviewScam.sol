@@ -7,10 +7,10 @@ contract GameReviews {
     uint GameOfTheYear = 999;
 
     // starting games and reviews
-    string[3] GameNames = ["Ace Combat 8", "Project Wingman", "HAWX"];
-    uint[3] GameRatings = [1, 5, 0];
-    string[3] Reviews = ["Ok game", "Great game!", "Old game"];
-    uint[3] ReviewRating = [1, 5, 0];
+    string[3] public GameNames = ["Ace Combat 8", "Project Wingman", "HAWX"];
+    uint[3] public GameRatings = [1, 5, 0];
+    string[3] public Reviews = ["Ok game", "Great game!", "Old game"];
+    uint[3] public ReviewRating = [1, 5, 0];
 
     // function to submit review for game, will replace best review if paid enough
     function SubmitReview(uint g, string memory text) public payable returns(string memory){
@@ -31,16 +31,17 @@ contract GameReviews {
         if (g > 3){
             return "Try again, wrong index";
         }
-        if (msg.value > 1000000000000000000){
+        if (msg.value >= 1000000000000000000){
             GameOfTheYear = g;
             return "Game of the Year awarded";
         }
         if (msg.value < 1000000000000000000){
             return "Insufficient ether";
         }
+        return "edge case error";
     }
 
-    function CheckGOTY() public returns (string memory){
+    function CheckGOTY() public view returns (string memory){
         if (GameOfTheYear == 999){
             return "No game awarded yet";
         }
