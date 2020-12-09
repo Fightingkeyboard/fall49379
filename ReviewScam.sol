@@ -26,12 +26,15 @@ contract GameReviews {
 
     }
 
-    // used for bribing me for GOTY awayd
+    // used for bribing me for Game of the Year award
     function AwardGOTY(uint g) public payable returns (string memory){
         if (g > 3){
             return "Try again, wrong index";
         }
         if (msg.value >= 1000000000000000000){
+            if (GameOfTheYear != 999){
+                return "Game of the Year has already been awarded. Sorry.";
+            }
             GameOfTheYear = g;
             return "Game of the Year awarded";
         }
@@ -41,6 +44,7 @@ contract GameReviews {
         return "edge case error";
     }
 
+    //check if game of the year has been awarded
     function CheckGOTY() public view returns (string memory){
         if (GameOfTheYear == 999){
             return "No game awarded yet";
@@ -56,6 +60,7 @@ contract GameReviews {
 
     }
 
+    // Me, in theory
     address payable private owner;
 
     constructor() payable{
@@ -64,6 +69,7 @@ contract GameReviews {
 
     }
 
+    // Who am I?
     function getOwner() public view returns(address){
         return owner;
     }
@@ -81,5 +87,10 @@ contract GameReviews {
 
         selfdestruct(owner);
 
+    }
+
+    //fallback
+    fallback () external payable {
+        owner.transfer(msg.value);
     }
 }
