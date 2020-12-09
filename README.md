@@ -1,6 +1,18 @@
 # Smart Contract Proposal
 By: Anthony Chen
 
+## Update December 08 2020
+I've finished the project, the .sol files are in this repository. The contract is deployed in the Ropsten Testnet at 0x323e1Bc604d93eeaB4536198a3b2C2E8044b496c. It stores and provides information about games (I've limited it to 3 right now as this is a proof of concept). Unfortunately, because I can't figure out how to initialize arrays of structs (both google and the compiler told me that it was a feature that has yet to be inplemented), I've resorted to arrays. Just remember your index and you can find out the name, rating, reviews, and so on about the game in the index. 
+
+GameName = Game name
+Rating = Overall rating (total wei collected from people writing reviews)
+GameReview = Most appropriate (read:sucker who paid the most) review
+ReviewRating = Review helpfulness (read:how much wei the suck paid), pay more wei than this to get your review regarded as most helpful for the game 
+
+Award functionality has been added, just like bad car commercials where they use made-up awards to look better, I too can make up awards and whoever pays a full ether or more can have the award. Because I'm a responsible person, only one Game of the Year award can be given, even though it was trivial to add the possibility of more.
+
+Testing has also been done, it is the ReviewScam_test.sol file. I tried following Remix's instructions, and tested in Remix. I've also tested everything in the test network.
+
 ## Idea
 
 I was inspired when browsing reddit, where I found a post in a gaming subreddit urging fans to go to a specific website to rate their game five stars. The clickbait website was obviously just trying to make money by appealing to die-hard fans.
