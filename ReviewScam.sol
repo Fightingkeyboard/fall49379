@@ -58,6 +58,7 @@ contract GameReviews {
 
         Reviews[g] = text;
         ReviewRating[g] = v;
+        GameRatings[g] += v;
 
     }
 
