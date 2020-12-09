@@ -17,11 +17,12 @@ contract GameReviews {
 
         if (msg.value > ReviewRating[g]){
             Reviews[g] = text;
-            ReviewRating[g] += msg.value;
+            GameRatings[g] += msg.value;
+            ReviewRating[g] = msg.value;
             return "Thanks! Your review has been accepted, and replaced the previous one.";
         }
 
-        ReviewRating[g] += msg.value;
+        GameRatings[g] += msg.value;
         return "Thanks! Your review has been accepted.";
 
     }
